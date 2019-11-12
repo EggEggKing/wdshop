@@ -1,0 +1,10 @@
+#建账号表
+create table xdc_account(
+name varchar(20) not null,
+passwd varchar(20) not null,
+primary key(name));
+#建个人信息表
+create table xdc_account(
+name varchar(20) not null,
+passwd varchar(20) not null,
+primary key(name));

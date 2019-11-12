@@ -1,0 +1,89 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <title>首页</title>
+    <link rel="stylesheet" href="/tp3/phpSJ/static/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+        body
+        {
+            padding-top:50px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">不毒</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">主页</a></li>
+                <li><a href="shopping">挑选</a></li>
+                <li><a href="shopping_car">购物车</a></li>
+                <li><a href='../user/login'>登录</a></li>
+                <li><a href='../user/register'>注册</a></li>
+                <li><a href='../user/logout'>登出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+        <h1>不毒鞋商</h1>
+        <p class="lead">欢迎进入不毒，您可以在此购买你想要的鞋子</p>
+    </div>
+</div>
+
+<div id="ptCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#ptCarousel" data-slide-to="0" class="active"> </li>
+        <li data-target="#ptCarousel" data-slide-to="1"> </li>
+        <li data-target="#ptCarousel" data-slide-to="2"> </li>
+
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active" style="background:#F5E4DC;">
+            <img src="/tp3/phpSJ/images/1.jpg" alt="第一张" />
+        </div>
+        <div class="item" style="background:#6f42c1;">
+            <img src="/tp3/phpSJ/images/2.jpg" alt="第二张" />
+        </div>
+        <div class="item" style="background:#DE2A2D;">
+            <img src="/tp3/phpSJ/images/3.jpg" alt="第三张" />
+        </div>
+    </div>
+
+    <a href="#ptCarousel" data-slide="prev" class="carousel-control left">
+        <span class="glyphicon glyphicon-chevron-left"> </span>
+    </a>
+    <a href="#ptCarousel" data-slide="next" class="carousel-control right">
+        <span class="glyphicon glyphicon-chevron-right"> </span>
+    </a>
+</div>
+
+<script src="/tp3/phpSJ/static/jquery/2.1.1/jquery.min.js"></script>
+<script src="/tp3/phpSJ/static/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $("#ptCarousel").carousel
+    ({
+        interval :1000,
+    });
+</script>
+
+<div class="container" align="center">
+    <footer class="footer ">
+        <h4></h4>
+        <address>
+            <strong><a href="account">17计信2@许玳诚</a></strong>
+            深圳市，南山区<br/>
+            深圳职业技术学院
+            <abbr title="id">学号:17240051</abbr>
+        </address>
+    </footer>
+</div>
+
+</body>
+</html>
